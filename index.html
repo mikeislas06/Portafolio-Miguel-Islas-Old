@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bf669cf56f.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./assets/css/helpers.css">
+    <link rel="stylesheet" href="./assets/css/circularProgressBar.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <link rel="shortcut icon" href="#">
+
+    <title>Miguel A. Islas G.</title>
+  </head>
+  <body>
+
+    <div class="nav-bar">
+        <div class="container nav-bar-container display-flex justify-space-between">
+            <span id="userInfoNavBarBtn" class="nav-bar-icon">
+                <i class="fas fa-ellipsis-v"></i>
+            </span>
+            <span id="sideMenuNavBarBtn" class="nav-bar-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+        </div>
+    </div>
+
+    <aside id="userInfoBar" class="user-info">
+        <span id="userInfoBtn" class="user-info-btn">
+            <i class="fas fa-times"></i>
+        </span>
+        <div class="user-info-header">
+            <div class="container user-info-header-banner display-flex">
+                <div class="user-info-header-banner-user">
+                    <div class="user-info-header-banner-user-img">
+                    </div>
+                    <div class="user-info-header-banner-user-name">
+                        <h6>Miguel A. Islas G.</h6>
+                    </div>
+                    <div class="user-info-header-banner-user-job">
+                        <h6>Front-end Developer</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-info-residence">
+            <div class="container user-info-residence-container">
+                <ul>
+                    <li class="display-flex justify-space-between">
+                        <h5>Residence:</h5>
+                        <h6>Mexico</h6>
+                    </li>
+                    <li class="display-flex justify-space-between">
+                        <h5>City:</h5>
+                        <h6>Puebla</h6>
+                    </li>
+                    <li class="display-flex justify-space-between">
+                        <h5>Age:</h5>
+                        <h6>27</h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="user-info-lang">
+            <div class="container user-info-lang-container">
+                <div class="row display-flex h-100 align-center">
+                    <div class="col-4">
+                        <div id="progressCircle1" class="progress blue">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">100%</div>
+                        </div>
+                        <div class="language">Spanish</div>
+                    </div>
+                    <div class="col-4">
+                        <div id="progressCircle2" class="progress yellow">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">90%</div>
+                        </div>
+                        <div class="language">English</div>
+                    </div>
+                    <div class="col-4">
+                        <div id="progressCircle3" class="progress pink">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">20%</div>
+                        </div>
+                        <div class="language">German</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="user-info-skills">
+            <div class="container user-info-skills-container">
+                <div class="skills-wrapper">
+                    <div class="skill">
+                        <div class="skill-title display-flex justify-space-between">HTML <span>90 %</span></div>
+                        <div class="skill-progress-bar">
+                            <div id="skill1" class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title display-flex justify-space-between">CSS <span>80 %</span></div>
+                        <div class="skill-progress-bar">
+                            <div id="skill2" class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title display-flex justify-space-between">JS <span>80 %</span></div>
+                        <div class="skill-progress-bar">
+                            <div id="skill3" class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title display-flex justify-space-between">Bootstrap <span>70 %</span></div>
+                        <div class="skill-progress-bar">
+                            <div id="skill4" class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title display-flex justify-space-between">PHP <span>60 %</span></div>
+                        <div class="skill-progress-bar">
+                            <div id="skill5" class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title display-flex justify-space-between">Wordpress <span>50 %</span></div>
+                        <div class="skill-progress-bar">
+                            <div id="skill6" class="skill-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="user-info-knowledge">
+            <div class="container user-info-knowledge-container">
+                <ul>
+                    <li><i class="fas fa-check"></i>  Bootstrap</li>
+                    <li><i class="fas fa-check"></i>  Sass</li>
+                    <li><i class="fas fa-check"></i>  Gulp</li>
+                    <li><i class="fas fa-check"></i>  Git knowledge</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="resume">
+            <div class="container resume-container">
+                <a href="./assets/files/Resume MAIG.pdf" download>
+                    Download CV <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+        <div class="user-info-footer">
+            <div class=" container user-info-footer-container display-flex justify-space-between">
+                <a href="https://www.linkedin.com/in/maig" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/mikeislas06" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <aside id="sideMenu" class="side-menu">
+        <div class="side-menu-bar">
+            <span id="sideMenuBtn" class="side-menu-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div class="container side-menu-submenu-wrapper">
+            <div class="side-menu-submenu-container">
+                <ul>
+                    <li class="menu-option"><a href="">Home</a></li>
+                    <li class="menu-option"><a href="">Portfolio</a></li>
+                    <li class="menu-option"><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="side-menu-footer">
+            <div class="container side-menu-footer-lang">
+                <div class="lang spanish">
+                    <h6>Es</h6>
+                </div>
+                <div class="lang english">
+                    <h6>En</h6>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <!-- Local JS -->
+    <script src="./assets/js/scripts.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
