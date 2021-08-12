@@ -1,0 +1,133 @@
+@media (min-width:740px) {
+    .header-container h1 {
+        font-size: 28px;
+    }
+
+    .header-container p {
+        font-size: 14px;
+    }
+
+    .header-container a {
+        height: 30px;
+        line-height: 30px;
+        width: 30%;
+    }
+
+    .portfolio-section img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-container h1 {
+        font-size: 70px;
+    }
+
+    .header-container p {
+        font-size: 20px;
+    }
+
+    .header-container a {
+        font-size: 15px;
+        width: 30%;
+    }
+
+    .user-info {
+        height: auto;
+    }
+
+    .expertise-section span {
+        font-size: 24px;
+    }
+    
+    .expertise-section h6 {
+        font-size: 18px;
+    }
+
+    .portfolio-section img {
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-container h1 {
+        font-size: 55px;
+    }
+
+    .header-banner-code {
+        height: 30%;
+    }
+
+    .header-banner-btn {
+        height: 5%;
+    }
+
+    .header-banner-btn a {
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .portfolio-section img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width:1200px) {
+    .justify-lg-end {
+        justify-content: end;
+    }
+
+    #userInfoNavBarBtn {
+        display: none;
+    }
+
+    #sideMenuNavBarBtn {
+        display: none;
+    }
+
+    .user-info {
+        overflow: scroll;
+        width: 350px;
+        top: 0px;
+        transform: translateX(290px);
+    }
+
+    .user-info-btn {
+        display: none;
+    }    
+
+    #skill1 {
+        animation: loading-90 1.8s linear forwards;
+    }
+    #skill2 {
+        animation: loading-80 1.8s linear forwards;
+    }
+    #skill3 {
+        animation: loading-80 1.8s linear forwards;
+    }
+    #skill4 {
+        animation: loading-70 1.8s linear forwards;
+    }
+    #skill5 {
+        animation: loading-60 1.8s linear forwards;
+    }
+    #skill6 {
+        animation: loading-50 1.8s linear forwards;
+    }
+
+    .side-menu {
+        width: 350px;
+        top: 0;
+        transform: translate(-290px);
+        overflow: hidden;
+    }
+
+    .side-menu-bar {
+        background-color: var(--bg-color);
+    }
+
+    #sideMenuBtn {
+        display: none;
+    }
+}
