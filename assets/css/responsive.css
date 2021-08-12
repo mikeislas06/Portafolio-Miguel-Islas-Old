@@ -151,4 +151,12 @@
     #sideMenuBtn {
         display: none;
     }
+
+    .header-banner-title {
+        width: 70%;
+    }
+
+    .header-banner-title h1 {
+        font-size: 80px;
+    }
 }
