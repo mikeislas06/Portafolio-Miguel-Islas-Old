@@ -74,7 +74,6 @@ section h5 {
     width: 290px;
     height: 100vh;
     overflow: scroll;
-    scrollbar-width: none;
     position: fixed;
     top: 0;
     left: -290px;
@@ -82,6 +81,10 @@ section h5 {
     transition: 0.55s ease-in-out;
     z-index: 9;
     background-color: var(--bg-color);
+}
+
+.user-info::-webkit-scrollbar {
+    display: none;
 }
 
 .user-info.active {
