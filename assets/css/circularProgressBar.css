@@ -70,7 +70,7 @@
     position: absolute;
 }
 
-.progress.pink.active .progress-right .progress-bar {
+.progress.third.active .progress-right .progress-bar {
     animation: loading-20 1.8s linear forwards;
 }
 
@@ -80,7 +80,6 @@
     font-size: 12px;
     margin-top: 10px;
 }
-
 @keyframes loading-0{
     0%{
         transform: rotate(0deg);
@@ -138,21 +137,21 @@
     }
 }
 
-.progress.blue .progress-bar{
+.progress.first .progress-bar{
     border-color: var(--main-color);
 }
-.progress.blue.active .progress-left .progress-bar{
+.progress.first.active .progress-left .progress-bar{
     animation: loading-2 1.5s linear forwards 1.8s;
 }
-.progress.yellow .progress-bar{
+.progress.second .progress-bar{
     border-color: var(--main-color);
 }
-.progress.yellow.active .progress-left .progress-bar{
+.progress.second.active .progress-left .progress-bar{
     animation: loading-3 1s linear forwards 1.8s;
 }
-.progress.pink .progress-bar{
+.progress.third .progress-bar{
     border-color: var(--main-color);
 }
-.progress.pink.active .progress-left .progress-bar{
+.progress.third.active .progress-left .progress-bar{
     animation: loading-0 0.4s linear forwards 1.8s;
 }

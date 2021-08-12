@@ -3,7 +3,6 @@
     --nav-color: #17171d;
     --secondary-nav-color: #23232d;
     --icon-color: #8c8c8e;
-    /* --main-color:  #2f8be0; */
     --main-color:  #64B5F6;
 }
 
@@ -609,11 +608,6 @@ section {
     margin-bottom: 0;
 }
 
-.services-section .row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
 .service {
     background-color: #2b2b35;
     width: 90%;
@@ -651,6 +645,15 @@ section {
 /* ***************************************************************** */
 
 .portfolio-section h5 {
+    text-align: center;
+    color: #fafafa;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* ***************************************************************** */
+
+.contact-section h5 {
     text-align: center;
     color: #fafafa;
     margin-top: 10px;
