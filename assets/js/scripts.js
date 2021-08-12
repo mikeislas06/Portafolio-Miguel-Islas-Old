@@ -68,3 +68,16 @@ function closeSideMenu(){
 
     sideMenu.classList.remove('active');
 }
+
+const pOption1 = document.getElementById('pOption1');
+const pOption2 = document.getElementById('pOption2');
+
+pOption1.addEventListener('click', () => {
+    pOption1.classList.add('p-active');
+    pOption2.classList.remove('p-active');
+});
+
+pOption2.addEventListener('click', () => {
+    pOption1.classList.remove('p-active');
+    pOption2.classList.add('p-active');
+});

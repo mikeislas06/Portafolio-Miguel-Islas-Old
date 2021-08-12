@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-color);
     scrollbar-width: none;
@@ -35,6 +39,10 @@ hr {
 section {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+section h5 {
+    font-size: 28px;
 }
 
 /* ***************************************************************** */
@@ -692,7 +700,44 @@ li.p-active {
     text-align: center;
     color: #fafafa;
     margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-section form label {
+    width: 100%;
+    text-align: center;
+    color: #fafafa;
+    margin-bottom: 15px;
+}
+
+.contact-section form input {
+    background-color: #2b2b35;
+    border: #2b2b35;
+    margin-bottom: 15px;
+    color: #fafafa;
+    width: 100%;
+}
+
+.contact-section form input::placeholder {
+    color: #fafafa5d;
+}
+
+.contact-section form textarea {
+    background-color: #2b2b35;
+    border: #2b2b35;
+    color: #fafafa;
+    width: 100%;
+}
+
+.contact-section form textarea::placeholder {
+    color: #fafafa5d;
+}
+
+.contact-section form input.submit {
+    margin-top: 15px;
     margin-bottom: 0;
+    border-radius: 5px;
+    width: 100px;
 }
 
 /* ***************************************************************** */
