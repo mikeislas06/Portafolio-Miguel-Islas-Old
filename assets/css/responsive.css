@@ -16,6 +16,11 @@
     .portfolio-section img {
         width: 70%;
     }
+
+    .user-info {
+        height: auto;
+        overflow: scroll;
+    }
 }
 
 @media (min-width: 768px) {
@@ -34,6 +39,23 @@
 
     .user-info {
         height: auto;
+        overflow: scroll;
+    }
+
+    .user-info-header-banner-user h6 {
+        font-size: 16.5px;
+    }
+
+    .user-info-residence-container h5 {
+        font-size: 15px;
+    }
+    
+    .user-info-residence-container h6 {
+        font-size: 13px;
+    }
+
+    .user-info-knowledge ul li {
+        font-size: 14px;
     }
 
     .expertise-section span {
@@ -42,6 +64,10 @@
     
     .expertise-section h6 {
         font-size: 18px;
+    }
+
+    .resume-container a {
+        font-size: 13px;
     }
 
     .service h6 {
@@ -80,6 +106,11 @@
         line-height: 45px;
     }
 
+    .user-info {
+        height: auto;
+        overflow: scroll;
+    }
+
     .portfolio-section img {
         width: 100%;
         margin-bottom: 20px;
@@ -108,6 +139,7 @@
     }
 
     .user-info {
+        position: fixed;
         overflow: auto;
         width: 18vw;
         top: 0px;

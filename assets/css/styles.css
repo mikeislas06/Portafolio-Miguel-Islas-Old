@@ -75,7 +75,7 @@ section h5 {
     height: 100vh;
     overflow: scroll;
     scrollbar-width: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: -290px;
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);

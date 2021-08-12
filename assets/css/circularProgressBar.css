@@ -156,6 +156,16 @@
     animation: loading-0 0.4s linear forwards 1.8s;
 }
 
+@media (min-width:768px) {
+    .language {
+        font-size: 15px;
+    }
+
+    .progress-value {
+        font-size: 12px;
+    }
+}
+
 @media (min-width:1200px) {
     .progress .progress-right .progress-bar {
         animation: loading-1 1.8s linear forwards;
