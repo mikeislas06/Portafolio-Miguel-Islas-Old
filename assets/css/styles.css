@@ -651,6 +651,17 @@ section {
     margin-bottom: 0;
 }
 
+.portfolio-section .container {
+    text-align: center;
+}
+
+.portfolio-section img {
+    width: 90%;
+    height: 200px;
+    border: 1px solid red;
+    margin: 20px 0;
+}
+
 /* ***************************************************************** */
 
 .contact-section h5 {
