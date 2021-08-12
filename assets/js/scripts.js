@@ -62,3 +62,9 @@ sideMenuBtn.addEventListener('click', () => {
 
     sideMenu.classList.toggle('active');
 });
+
+function closeSideMenu(){
+    const sideMenu = document.getElementById('sideMenu');
+
+    sideMenu.classList.remove('active');
+}

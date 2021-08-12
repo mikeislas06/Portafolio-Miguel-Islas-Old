@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -30,16 +31,18 @@
   </head>
   <body>
 
-    <div class="nav-bar">
-        <div class="container nav-bar-container display-flex justify-space-between">
-            <span id="userInfoNavBarBtn" class="nav-bar-icon">
-                <i class="fas fa-ellipsis-v"></i>
-            </span>
-            <span id="sideMenuNavBarBtn" class="nav-bar-icon">
-                <i class="fas fa-bars"></i>
-            </span>
+    <nav>
+        <div class="nav-bar">
+            <div class="container nav-bar-container display-flex justify-space-between">
+                <span id="userInfoNavBarBtn" class="nav-bar-icon">
+                    <i class="fas fa-ellipsis-v"></i>
+                </span>
+                <span id="sideMenuNavBarBtn" class="nav-bar-icon">
+                    <i id="sideMenuNavBarBtnIcon" class="fas fa-bars"></i>
+                </span>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <aside id="userInfoBar" class="user-info">
         <span id="userInfoBtn" class="user-info-btn">
@@ -206,9 +209,10 @@
         <div class="container side-menu-submenu-wrapper">
             <div class="side-menu-submenu-container">
                 <ul>
-                    <li class="menu-option"><a href="">Home</a></li>
-                    <li class="menu-option"><a href="">Portfolio</a></li>
-                    <li class="menu-option"><a href="">Contact</a></li>
+                    <li class="menu-option"><a href="#" onclick="closeSideMenu();">Home</a></li>
+                    <li class="menu-option"><a href="#servicesSection" onclick="closeSideMenu();">Services</a></li>
+                    <li class="menu-option"><a href="#portfolioSection" onclick="closeSideMenu();">Portfolio</a></li>
+                    <li class="menu-option"><a href="#contactSection" onclick="closeSideMenu();">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -227,9 +231,109 @@
 
     <header>
         <div class="container header-container">
-            
+            <div class="header-banner">
+                <div class="header-banner-title">
+                    <h1>
+                        Web Developing is my passion!
+                    </h1>
+                </div>
+                <div class="header-banner-code">
+                    <p>&lt;<span>code</span>&gt; I build Web Interfaces &lt;<span>code</span>&gt;</p>
+                </div>
+                <div class="header-banner-btn">
+                    <a href="#">
+                        EXPLORE NOW
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
+
+    <section>
+        <div class="container expertise-section">
+            <div class="row">
+                <div class="col-6 col-md-6 col-lg-3">
+                    <span>2 +</span>
+                    <h6>Years Experience</h6>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <span>10 +</span>
+                    <h6>Completed Projects</h6>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <span>50</span>
+                    <h6>Happy Customers</h6>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <span>3 +</span>
+                    <h6>Cloud Certifications</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicesSection">
+        <div class="services-section">
+            <h5>My Services</h5>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="service">
+                        <h6>Web Development</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Dolores odit fugit 
+                            quo ipsum libero dolore corrupti beatae 
+                            sapiente non nostrum!
+                        </p>
+                        <a href="#">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="service">
+                        <h6>UI/UX Design</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Dolores odit fugit 
+                            quo ipsum libero dolore corrupti beatae 
+                            sapiente non nostrum!
+                        </p>
+                        <a href="#">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="service">
+                        <h6>Cloud Computing</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Dolores odit fugit 
+                            quo ipsum libero dolore corrupti beatae 
+                            sapiente non nostrum!
+                        </p>
+                        <a href="#">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="service">
+                        <h6>Advertising</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Dolores odit fugit 
+                            quo ipsum libero dolore corrupti beatae 
+                            sapiente non nostrum!
+                        </p>
+                        <a href="#">ORDER NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="portfolio-section">
+            <h5>Portfolio</h5>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4"></div>
+                <div class="col-12 col-md-6 col-lg-4"></div>
+                <div class="col-12 col-md-6 col-lg-4"></div>
+            </div>
+        </div>
+    </section>
 
     <!-- Local JS -->
     <script src="./assets/js/scripts.js"></script>
@@ -238,5 +342,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
   </body>
 </html>
