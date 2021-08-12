@@ -83,7 +83,7 @@ pOption2.addEventListener('click', () => {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ['Web Interfaces','Mobile applications','Automation Tools','UX Testing'];
+const textArray = ['Web Interfaces','Mobile applications','User Interfaces','Automation Tools'];
 const typingDelay = 90;
 const erasingDelay = 100;
 const newTextDelay = 2000;

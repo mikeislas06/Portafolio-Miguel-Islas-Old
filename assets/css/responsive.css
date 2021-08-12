@@ -108,7 +108,7 @@
     }
 
     .user-info {
-        overflow: scroll;
+        overflow: auto;
         width: 18vw;
         top: 0px;
         transform: translateX(290px);
