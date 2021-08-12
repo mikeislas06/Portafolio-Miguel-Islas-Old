@@ -73,8 +73,6 @@ section h5 {
 .user-info {
     width: 290px;
     height: 100vh;
-    overflow: scroll;
-    scrollbar-width: none;
     position: absolute;
     top: 0;
     left: -290px;
@@ -409,7 +407,7 @@ section h5 {
     width: 290px;
     height: 100vh;
     background-color: var(--bg-color);
-    overflow: scroll;
+    overflow: hidden;
     scrollbar-width: none;
     position: fixed;
     top: 0;
@@ -439,7 +437,7 @@ section h5 {
 /* ***************************************************************** */
 
 .side-menu-submenu-wrapper {
-    height: 75%;
+    height: 70%;
     position: relative;
 }
 

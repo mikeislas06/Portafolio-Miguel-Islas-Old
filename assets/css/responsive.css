@@ -19,7 +19,6 @@
 
     .user-info {
         height: auto;
-        overflow: scroll;
     }
 }
 
@@ -39,7 +38,6 @@
 
     .user-info {
         height: auto;
-        overflow: scroll;
     }
 
     .user-info-header-banner-user h6 {
@@ -108,7 +106,6 @@
 
     .user-info {
         height: auto;
-        overflow: scroll;
     }
 
     .portfolio-section img {
@@ -140,7 +137,6 @@
 
     .user-info {
         position: fixed;
-        overflow: auto;
         width: 18vw;
         top: 0px;
         transform: translateX(290px);
