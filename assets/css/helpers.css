@@ -26,6 +26,10 @@
     display: flex;
 }
 
+.display-none {
+    display: none;
+}
+
 .justify-space-between {
     justify-content: space-between;
 }

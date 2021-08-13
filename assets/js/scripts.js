@@ -80,20 +80,29 @@ pOption2.addEventListener('click', () => {
 
 // Typewriting function
 
-const typedTextSpan = document.querySelector(".typed-text");
+const typedTextSpan = document.querySelectorAll(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
+const codeTypewriterEn = document.getElementById('codeTypewriterEn');
+let textArray = ['Web Interfaces','Mobile applications','User Interfaces','Automation Tools'];
 
-const textArray = ['Web Interfaces','Mobile applications','User Interfaces','Automation Tools'];
 const typingDelay = 90;
-const erasingDelay = 100;
+const erasingDelay = 70;
 const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
 
 function type() {
+  if(codeTypewriterEn.classList.contains('display-none')){
+    textArray = ['Interfaces Web','Aplicaciones Móviles','UX/UI','Automatización'];
+  }
+  else{
+    textArray = ['Web Interfaces','Mobile applications','User Interfaces','Automation Tools'];
+  }
+
   if(charIndex < textArray[textArrayIndex].length){
     if(!cursorSpan.classList.contains('typing')) cursorSpan.classList.add('typing');
-    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    typedTextSpan[0].textContent += textArray[textArrayIndex].charAt(charIndex);
+    typedTextSpan[1].textContent += textArray[textArrayIndex].charAt(charIndex);
     charIndex++;
     setTimeout(type, typingDelay);
   }
@@ -106,7 +115,8 @@ function type() {
 function erase(){
   if(charIndex > 0){
     if(!cursorSpan.classList.contains('typing')) cursorSpan.classList.add('typing');
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+    typedTextSpan[0].textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+    typedTextSpan[1].textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
     charIndex--;
     setTimeout(erase, erasingDelay);
   }
@@ -120,4 +130,38 @@ function erase(){
 
 document.addEventListener("DOMContentLoaded", function(){
   if(textArray.length) setTimeout(type, newTextDelay);
+});
+
+// -------------------------------------------------------------------------------------------
+// Translating text
+
+const englishBtn = document.getElementById('englishBtn');
+const spanishBtn = document.getElementById('spanishBtn');
+
+englishBtn.addEventListener('click', () => {
+  const englishText = document.querySelectorAll('.english');
+  const spanishText = document.querySelectorAll('.spanish');
+
+  englishText.forEach(function(i) {
+    
+    i.classList.remove('display-none');
+    
+    spanishText.forEach(function(j) {
+      j.classList.add('display-none');
+    })
+  });  
+});
+
+spanishBtn.addEventListener('click', () => {
+  const englishText = document.querySelectorAll('.english');
+  const spanishText = document.querySelectorAll('.spanish');
+
+  spanishText.forEach(function(i) {
+    
+    i.classList.remove('display-none');
+    
+    englishText.forEach(function(j) {
+      j.classList.add('display-none');
+    })
+  });  
 });

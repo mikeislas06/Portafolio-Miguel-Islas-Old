@@ -496,7 +496,7 @@ section h5 {
     cursor: pointer;
 }
 
-.spanish {
+.lang-spanish {
     margin-bottom: 20px;
 }
 
@@ -718,6 +718,10 @@ section h5 {
     font-size: 14px;
     font-weight: 400;
     color: #fafafa;
+}
+
+.portfolio-menu li.display-none {
+    display: none;
 }
 
 li.p-active {

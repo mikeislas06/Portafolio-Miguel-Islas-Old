@@ -55,10 +55,12 @@
                     <div class="user-info-header-banner-user-img">
                     </div>
                     <div class="user-info-header-banner-user-name">
-                        <h6>Miguel A. Islas G.</h6>
+                        <h6 class="english">Miguel A. Islas G.</h6>
+                        <h6 class="spanish display-none">Miguel A. Islas G.</h6>
                     </div>
                     <div class="user-info-header-banner-user-job">
-                        <h6>Front-end Developer</h6>
+                        <h6 class="english">Front-end Developer</h6>
+                        <h6 class="spanish display-none">Desarrollador Front-End</h6>
                     </div>
                 </div>
             </div>
@@ -67,16 +69,22 @@
             <div class="container user-info-residence-container">
                 <ul>
                     <li class="display-flex justify-space-between">
-                        <h5>Residence:</h5>
-                        <h6>Mexico</h6>
+                        <h5 class="english">Residence:</h5>
+                        <h6 class="english">Mexico</h6>
+                        <h5 class="spanish display-none">Residencia:</h5>
+                        <h6 class="spanish display-none">Mexico</h6>
                     </li>
                     <li class="display-flex justify-space-between">
-                        <h5>City:</h5>
-                        <h6>Puebla</h6>
+                        <h5 class="english">City:</h5>
+                        <h6 class="english">Puebla</h6>
+                        <h5 class="spanish display-none">Ciudad:</h5>
+                        <h6 class="spanish display-none">Puebla</h6>
                     </li>
                     <li class="display-flex justify-space-between">
-                        <h5>Age:</h5>
-                        <h6>27</h6>
+                        <h5 class="english">Age:</h5>
+                        <h6 class="english">27</h6>
+                        <h5 class="spanish display-none">Age:</h5>
+                        <h6 class="spanish display-none">27</h6>
                     </li>
                 </ul>
             </div>
@@ -95,7 +103,8 @@
                             </span>
                             <div class="progress-value">100%</div>
                         </div>
-                        <div class="language">Spanish</div>
+                        <div class="language english">Spanish</div>
+                        <div class="language spanish display-none">Español</div>
                     </div>
                     <div class="col-6">
                         <div id="progressCircle2" class="progress second">
@@ -107,7 +116,8 @@
                             </span>
                             <div class="progress-value">90%</div>
                         </div>
-                        <div class="language">English</div>
+                        <div class="language english">English</div>
+                        <div class="language spanish display-none">Inglés</div>
                     </div>
                 </div>
             </div>
@@ -160,7 +170,8 @@
             <div class="container user-info-knowledge-container">
                 <ul>
                     <li><i class="fas fa-check"></i>  Bootstrap</li>
-                    <li><i class="fas fa-check"></i>  Git knowledge</li>
+                    <li class="english"><i class="fas fa-check"></i>  Git knowledge</li>
+                    <li class="spanish display-none"><i class="fas fa-check"></i>  Conocimiento en Git</li>
                     <li><i class="fas fa-check"></i>  Microsoft Azure</li>
                 </ul>
             </div>
@@ -197,21 +208,25 @@
         <div class="container side-menu-submenu-wrapper">
             <div class="side-menu-submenu-container">
                 <ul>
-                    <li class="menu-option"><a href="index.html" onclick="closeSideMenu();">Home</a></li>
-                    <li class="menu-option"><a href="#servicesSection" onclick="closeSideMenu();">Services</a></li>
-                    <li class="menu-option"><a href="#portfolioSection" onclick="closeSideMenu();">Portfolio</a></li>
-                    <li class="menu-option"><a href="#contactSection" onclick="closeSideMenu();">Contact</a></li>
+                    <li class="menu-option english"><a href="index.html" onclick="closeSideMenu();">Home</a></li>
+                    <li class="menu-option english"><a href="#servicesSection" onclick="closeSideMenu();">Services</a></li>
+                    <li class="menu-option english"><a href="#portfolioSection" onclick="closeSideMenu();">Portfolio</a></li>
+                    <li class="menu-option english"><a href="#contactSection" onclick="closeSideMenu();">Contact</a></li>
+                    <li class="menu-option spanish display-none"><a href="index.html" onclick="closeSideMenu();">Inicio</a></li>
+                    <li class="menu-option spanish display-none"><a href="#servicesSection" onclick="closeSideMenu();">Servicios</a></li>
+                    <li class="menu-option spanish display-none"><a href="#portfolioSection" onclick="closeSideMenu();">Portafolio</a></li>
+                    <li class="menu-option spanish display-none"><a href="#contactSection" onclick="closeSideMenu();">Contacto</a></li>
                 </ul>
             </div>
         </div>
         <hr>
         <div class="side-menu-footer">
             <div class="container side-menu-footer-lang">
-                <div class="lang spanish">
-                    <h6>Es</h6>
+                <div class="lang lang-spanish">
+                    <h6 id="englishBtn">En</h6>
                 </div>
-                <div class="lang english">
-                    <h6>En</h6>
+                <div class="lang lang-english">
+                    <h6 id="spanishBtn">Es</h6>
                 </div>
             </div>
         </div>
@@ -221,18 +236,25 @@
         <div class="container header-container">
             <div class="header-banner">
                 <div class="header-banner-title">
-                    <h1>
+                    <h1 class="english">
                         Web Developing is my passion!
+                    </h1>
+                    <h1 class="spanish display-none">
+                        ¡El Desarrollo Web es mi Pasión!
                     </h1>
                 </div>
                 <div class="header-banner-code">
                     <div class="typewriter-wrapper">
-                        <p>&lt;<i>code</i>&gt;I build <span class="typed-text"></span><span class="cursor">&nbsp;</span>&lt;<i>code</i>&gt;</p>
+                        <p id="codeTypewriterEn" class="english">&lt;<i>code</i>&gt;I build <span class="typed-text"></span><span class="cursor">&nbsp;</span>&lt;<i>code</i>&gt;</p>
+                        <p id="codeTypewriterEs" class="spanish display-none">&lt;<i>code</i>&gt;Desarrollo <span class="typed-text"></span><span class="cursor">&nbsp;</span>&lt;<i>code</i>&gt;</p>
                     </div>
                 </div>
                 <div class="header-banner-btn">
-                    <a href="#servicesSection">
+                    <a href="#servicesSection" class="english">
                         EXPLORE NOW
+                    </a>
+                    <a href="#servicesSection" class="spanish display-none">
+                        CONOCE MÁS
                     </a>
                 </div>
             </div>
@@ -243,20 +265,24 @@
         <div class="container expertise-section">
             <div class="row">
                 <div class="col-6 col-md-6 col-lg-3">
-                    <span>2 +</span>
-                    <h6>Years Experience</h6>
+                    <span class="english">2 +</span>
+                    <h6 class="english">Years Experience</h6>
+                    <h6 class="spanish display-none">Años de Experiencia</h6>
                 </div>
                 <div class="col-6 col-md-6 col-lg-3">
-                    <span>10 +</span>
-                    <h6>Completed Projects</h6>
+                    <span class="english">10 +</span>
+                    <h6 class="english">Completed Projects</h6>
+                    <h6 class="spanish display-none">Proyectos Finalizados</h6>
                 </div>
                 <div class="col-6 col-md-6 col-lg-3">
-                    <span>50</span>
-                    <h6>Happy Customers</h6>
+                    <span class="english">50 +</span>
+                    <h6 class="english">Happy Customers</h6>
+                    <h6 class="spanish display-none">Clientes Satisfechos</h6>
                 </div>
                 <div class="col-6 col-md-6 col-lg-3">
-                    <span>3 +</span>
-                    <h6>Cloud Certifications</h6>
+                    <span class="english">3 +</span>
+                    <h6 class="english">Cloud Certifications</h6>
+                    <h6 class="spanish display-none">Certificaciones en la Nube</h6>
                 </div>
             </div>
         </div>
@@ -266,50 +292,59 @@
     
     <section id="servicesSection">
         <div class="container services-section">
-            <h5>My Services</h5>
+            <h5 class="english">My Services</h5>
+            <h5 class="spanish display-none">Servicios</h5>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="service">
-                        <h6>Web Development</h6>
+                        <h6 class="english">Web Development</h6>
+                        <h6 class="spanish display-none">Desarrollo Web</h6>
                         <p>Lorem ipsum dolor sit amet consectetur 
                             adipisicing elit. Dolores odit fugit 
                             quo ipsum libero dolore corrupti beatae 
                             sapiente non nostrum!
                         </p>
-                        <a href="#">ORDER NOW</a>
+                        <a href="#" class="english">ORDER NOW</a>
+                        <a href="#" class="spanish display-none">MÁS INFORMACIÓN</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="service">
-                        <h6>UI/UX Design</h6>
+                        <h6 class="english">UI/UX Design</h6>
+                        <h6 class="spanish display-none">Diseño UI/UX</h6>
                         <p>Lorem ipsum dolor sit amet consectetur 
                             adipisicing elit. Dolores odit fugit 
                             quo ipsum libero dolore corrupti beatae 
                             sapiente non nostrum!
                         </p>
-                        <a href="#">ORDER NOW</a>
+                        <a href="#" class="english">ORDER NOW</a>
+                        <a href="#" class="spanish display-none">MÁS INFORMACIÓN</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="service">
-                        <h6>Cloud Computing Projects</h6>
+                        <h6 class="english">Cloud Computing Projects</h6>
+                        <h6 class="spanish display-none">Proyectos en la Nube</h6>
                         <p>Lorem ipsum dolor sit amet consectetur 
                             adipisicing elit. Dolores odit fugit 
                             quo ipsum libero dolore corrupti beatae 
                             sapiente non nostrum!
                         </p>
-                        <a href="#">ORDER NOW</a>
+                        <a href="#" class="english">ORDER NOW</a>
+                        <a href="#" class="spanish display-none">MÁS INFORMACIÓN</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="service">
-                        <h6>Advertising</h6>
+                        <h6 class="english">Sound Design</h6>
+                        <h6 class="spanish display-none">Diseño Sonoro</h6>
                         <p>Lorem ipsum dolor sit amet consectetur 
                             adipisicing elit. Dolores odit fugit 
                             quo ipsum libero dolore corrupti beatae 
                             sapiente non nostrum!
                         </p>
-                        <a href="#">ORDER NOW</a>
+                        <a href="#" class="english">ORDER NOW</a>
+                        <a href="#" class="spanish display-none">MÁS INFORMACIÓN</a>
                     </div>
                 </div>
             </div>
@@ -318,13 +353,20 @@
 
     <section id="portfolioSection">
         <div class="portfolio-section">
-            <h5>Portfolio</h5>
+            <h5 class="english">Portfolio</h5>
+            <h5 class="spanish display-none">Portafolio</h5>
             <ul class=" portfolio-menu mx-auto">
-                <li id="pOption1" class="p-active">
+                <li id="pOption1" class="english p-active">
                     All
                 </li>
-                <li id="pOption2">
+                <li id="pOption1" class="spanish display-none p-active">
+                    Todos
+                </li>
+                <li id="pOption2" class="english">
                     Web Design
+                </li>
+                <li id="pOption2" class="spanish display-none">
+                    Diseño Web
                 </li>
             </ul>
             <div class="container">
@@ -348,20 +390,30 @@
 
     <section id="contactSection">
         <div class="contact-section">
-            <h5>Contact</h5>
+            <h5 class="english">Contact</h5>
+            <h5 class="spanish display-none">Contact</h5>
             <div class="container">
                 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xnqlgkwl" method="post">
                     <fieldset id="fs-frm-inputs">
-                        <label for="full-name">Full Name</label>
-                        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-                        <label for="email-address">Email Address</label>
-                        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
-                        <label for="message">Message</label>
-                        <textarea rows="5" name="message" id="message" placeholder="Type your message here..." required=""></textarea>
+                        <label for="full-name" class="english">Full Name</label>
+                        <input type="text" class="english" name="name" id="full-name" placeholder="First and Last" required="">
+                        <label for="full-name" class="spanish display-none">Nombre Completo</label>
+                        <input type="text" class="spanish display-none" name="name" id="full-name" placeholder="Nombre y Apellido" required="">
+                        
+                        <label for="email-address" class="english">Email Address</label>
+                        <input type="email" class="english" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+                        <label for="email-address" class="spanish display-none">Email</label>
+                        <input type="email" class="spanish display-none" name="_replyto" id="email-address" placeholder="email@dominio.com" required="">
+                        
+                        <label for="message" class="english">Message</label>
+                        <textarea rows="5" class="english" name="message" id="message" placeholder="Type your message here..." required=""></textarea>
+                        <label for="message" class="spanish display-none">Mensaje</label>
+                        <textarea rows="5" class="spanish display-none" name="message" id="message" placeholder="Escribe tu mensaje aquí..." required=""></textarea>
                         <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                     </fieldset>
                     <div class="w-100 text-center">
-                        <input type="submit" class="submit" value="Submit">
+                        <input type="submit" class="english submit" value="Submit">
+                        <input type="submit" class="spanish display-none submit" value="Enviar">
                     </div>
                 </form>
             </div>
