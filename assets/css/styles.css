@@ -474,21 +474,19 @@ section h5 {
 
 .side-menu-footer {
     height: 20%;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .side-menu-footer-lang {
     width: 90%;
     height: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .lang {
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     margin-bottom: 5px;
     position: relative;
@@ -496,7 +494,7 @@ section h5 {
     cursor: pointer;
 }
 
-.lang-spanish {
+.lang-english {
     margin-bottom: 20px;
 }
 
