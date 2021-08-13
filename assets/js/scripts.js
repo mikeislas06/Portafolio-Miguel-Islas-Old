@@ -90,19 +90,21 @@ const erasingDelay = 70;
 const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
+let i = 0;
 
 function type() {
   if(codeTypewriterEn.classList.contains('display-none')){
     textArray = ['Interfaces Web','Aplicaciones Móviles','UX/UI','Automatización'];
+    i = 1;
   }
   else{
     textArray = ['Web Interfaces','Mobile applications','User Interfaces','Automation Tools'];
+    i = 0;
   }
 
   if(charIndex < textArray[textArrayIndex].length){
     if(!cursorSpan.classList.contains('typing')) cursorSpan.classList.add('typing');
-    typedTextSpan[0].textContent += textArray[textArrayIndex].charAt(charIndex);
-    typedTextSpan[1].textContent += textArray[textArrayIndex].charAt(charIndex);
+    typedTextSpan[i].textContent += textArray[textArrayIndex].charAt(charIndex);
     charIndex++;
     setTimeout(type, typingDelay);
   }
@@ -115,8 +117,7 @@ function type() {
 function erase(){
   if(charIndex > 0){
     if(!cursorSpan.classList.contains('typing')) cursorSpan.classList.add('typing');
-    typedTextSpan[0].textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-    typedTextSpan[1].textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+    typedTextSpan[i].textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
     charIndex--;
     setTimeout(erase, erasingDelay);
   }
