@@ -2,6 +2,10 @@ const userInfoNavBarBtn = document.getElementById('userInfoNavBarBtn');
 const sideMenuNavBarBtn = document.getElementById('sideMenuNavBarBtn');
 const userInfoBtn = document.getElementById('userInfoBtn');
 const sideMenuBtn = document.getElementById('sideMenuBtn');
+
+const englishBtnWrapper = document.getElementById('englishBtnWrapper');
+const spanishBtnWrapper = document.getElementById('spanishBtnWrapper');
+
 const progressCircle1 = document.getElementById('progressCircle1');
 const progressCircle2 = document.getElementById('progressCircle2');
 
@@ -39,6 +43,9 @@ sideMenuNavBarBtn.addEventListener('click', () => {
     document.querySelectorAll('.skill-progress').forEach(function(i) {
         i.classList.remove('active');
     });
+
+    englishBtnWrapper.classList.add('hidden');
+    spanishBtnWrapper.classList.add('hidden');
 });
 
 userInfoBtn.addEventListener('click', () => {
@@ -57,6 +64,8 @@ sideMenuBtn.addEventListener('click', () => {
     const sideMenu = document.getElementById('sideMenu');
 
     sideMenu.classList.toggle('active');
+    englishBtnWrapper.classList.remove('hidden');
+    spanishBtnWrapper.classList.remove('hidden');
 });
 
 function closeSideMenu(){
