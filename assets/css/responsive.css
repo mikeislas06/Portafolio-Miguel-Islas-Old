@@ -220,12 +220,12 @@
 
     .en-fixed {
         right: 265px;
-        bottom: 40px;
+        bottom: 60px;
     }
     
     .es-fixed {
         right: 265px;
-        bottom: 0;
+        bottom: 20px;
     }
 
     .header-banner-title {
