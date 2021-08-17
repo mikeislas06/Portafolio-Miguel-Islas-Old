@@ -1,6 +1,12 @@
+@media (min-width:411px) {
+    .header-container h1 {
+        font-size: 53px;
+    }
+}
+
 @media (min-width:740px) {
     .header-container h1 {
-        font-size: 28px;
+        font-size: 50px;
     }
 
     .header-container p {
@@ -22,9 +28,15 @@
     }
 }
 
+@media (min-width:740px) and (orientation:landscape) {
+    .header-banner-title h1 {
+        font-size: 28px;
+    }
+}
+
 @media (min-width: 768px) {
     .header-container h1 {
-        font-size: 70px;
+        font-size: 65px;
     }
 
     .header-container p {
@@ -88,7 +100,7 @@
 
 @media (min-width: 1024px) {
     .header-container h1 {
-        font-size: 55px;
+        font-size: 80px;
     }
 
     .header-banner-code {
@@ -118,6 +130,12 @@
     }
 }
 
+@media (min-width:1024px) and (orientation:landscape) {
+    .header-banner-title h1 {
+        font-size: 70px;
+    }
+}
+
 @media (min-width:1800px) {
     hr {
         width: 60%;
@@ -140,6 +158,26 @@
         width: 18vw;
         top: 0px;
         transform: translateX(290px);
+        height: 100vh;
+    }
+
+    .user-info-footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .resume {
+        height: 125px;
+    }
+
+    .resume-container {
+        height: 90%;
+        width: 85%;
+        padding-top: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
     }
 
     .user-info-btn {
@@ -180,11 +218,17 @@
         display: none;
     }
 
-    .header-banner-title {
-        width: 70%;
+    .en-fixed {
+        right: 265px;
+        bottom: 40px;
+    }
+    
+    .es-fixed {
+        right: 265px;
+        bottom: 0;
     }
 
-    .header-banner-title h1 {
-        font-size: 80px;
+    .header-banner-title {
+        width: 70%;
     }
 }
