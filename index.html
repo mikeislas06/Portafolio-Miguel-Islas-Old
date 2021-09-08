@@ -1,423 +1,711 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/bf669cf56f.js" crossorigin="anonymous"></script>
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="./assets/css/normalize.css" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/bf669cf56f.js"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="./assets/css/helpers.css">
-    <link rel="stylesheet" href="./assets/css/circularProgressBar.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
 
-    <link rel="shortcut icon" href="#">
+        <!-- Local CSS -->
+        <link rel="stylesheet" href="./assets/css/helpers.css" />
+        <link rel="stylesheet" href="./assets/css/circularProgressBar.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
 
-    <title>Miguel A. Islas Guerrero</title>
-  </head>
-  <body>
+        <link rel="shortcut icon" href="#" />
 
-    <nav>
-        <div class="nav-bar">
-            <div class="container nav-bar-container display-flex justify-space-between justify-lg-end">
-                <span id="userInfoNavBarBtn" class="nav-bar-icon">
-                    <i class="fas fa-ellipsis-v"></i>
-                </span>
-                <span id="sideMenuNavBarBtn" class="nav-bar-icon">
-                    <i id="sideMenuNavBarBtnIcon" class="fas fa-bars"></i>
-                </span>
-            </div>
-        </div>
-    </nav>
-
-    <aside id="userInfoBar" class="user-info">
-        <span id="userInfoBtn" class="user-info-btn">
-            <i class="fas fa-times"></i>
-        </span>
-        <div class="user-info-header">
-            <div class="container user-info-header-banner display-flex">
-                <div class="user-info-header-banner-user">
-                    <div class="user-info-header-banner-user-img">
-                    </div>
-                    <div class="user-info-header-banner-user-name">
-                        <h6 class="english">Miguel A. Islas G.</h6>
-                        <h6 class="spanish display-none">Miguel A. Islas G.</h6>
-                    </div>
-                    <div class="user-info-header-banner-user-job">
-                        <h6 class="english">Front-end Developer</h6>
-                        <h6 class="spanish display-none">Desarrollador Front-End</h6>
-                    </div>
+        <title>Miguel A. Islas Guerrero</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-bar">
+                <div
+                    class="
+                        container
+                        nav-bar-container
+                        display-flex
+                        justify-space-between justify-lg-end
+                    "
+                >
+                    <span id="userInfoNavBarBtn" class="nav-bar-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </span>
+                    <span id="sideMenuNavBarBtn" class="nav-bar-icon">
+                        <i id="sideMenuNavBarBtnIcon" class="fas fa-bars"></i>
+                    </span>
                 </div>
             </div>
-        </div>
-        <div class="user-info-residence">
-            <div class="container user-info-residence-container">
-                <ul>
-                    <li class="display-flex justify-space-between">
-                        <h5 class="english">Residence:</h5>
-                        <h6 class="english">Mexico</h6>
-                        <h5 class="spanish display-none">Residencia:</h5>
-                        <h6 class="spanish display-none">México</h6>
-                    </li>
-                    <li class="display-flex justify-space-between">
-                        <h5 class="english">City:</h5>
-                        <h6 class="english">Puebla</h6>
-                        <h5 class="spanish display-none">Ciudad:</h5>
-                        <h6 class="spanish display-none">Puebla</h6>
-                    </li>
-                    <li class="display-flex justify-space-between">
-                        <h5 class="english">Age:</h5>
-                        <h6 class="english">27</h6>
-                        <h5 class="spanish display-none">Edad:</h5>
-                        <h6 class="spanish display-none">27</h6>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <div class="user-info-lang">
-            <div class="container user-info-lang-container">
-                <div class="row display-flex h-100 align-center">
-                    <div class="col-6">
-                        <div id="progressCircle1" class="progress first">
-                            <span class="progress-left">
-                                <span class="progress-bar"></span>
-                            </span>
-                            <span class="progress-right">
-                                <span class="progress-bar"></span>
-                            </span>
-                            <div class="progress-value">100%</div>
-                        </div>
-                        <div class="language english">Spanish</div>
-                        <div class="language spanish display-none">Español</div>
-                    </div>
-                    <div class="col-6">
-                        <div id="progressCircle2" class="progress second">
-                            <span class="progress-left">
-                                <span class="progress-bar"></span>
-                            </span>
-                            <span class="progress-right">
-                                <span class="progress-bar"></span>
-                            </span>
-                            <div class="progress-value">90%</div>
-                        </div>
-                        <div class="language english">English</div>
-                        <div class="language spanish display-none">Inglés</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="user-info-skills">
-            <div class="container user-info-skills-container">
-                <div class="skills-wrapper">
-                    <div class="skill">
-                        <div class="skill-title display-flex justify-space-between">HTML <span>90 %</span></div>
-                        <div class="skill-progress-bar">
-                            <div id="skill1" class="skill-progress"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-title display-flex justify-space-between">CSS <span>80 %</span></div>
-                        <div class="skill-progress-bar">
-                            <div id="skill2" class="skill-progress"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-title display-flex justify-space-between">JS <span>80 %</span></div>
-                        <div class="skill-progress-bar">
-                            <div id="skill3" class="skill-progress"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-title display-flex justify-space-between">Bootstrap <span>70 %</span></div>
-                        <div class="skill-progress-bar">
-                            <div id="skill4" class="skill-progress"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="user-info-knowledge">
-            <div class="container user-info-knowledge-container">
-                <ul>
-                    <li><i class="fas fa-check"></i>  Bootstrap</li>
-                    <li class="english"><i class="fas fa-check"></i>  Git knowledge</li>
-                    <li class="spanish display-none"><i class="fas fa-check"></i>  Conocimiento en Git</li>
-                    <li><i class="fas fa-check"></i>  Microsoft Azure</li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <div class="resume">
-            <div class="container resume-container">
-                <a href="./assets/files/Resume MAIG.pdf" download class="english">
-                    Download CV <i class="fas fa-download"></i>
-                </a>
-                <a href="./assets/files/Resume MAIG.pdf" download class="spanish display-none">
-                    Descargar CV <i class="fas fa-download"></i>
-                </a>
-            </div>
-        </div>
-        <div class="user-info-footer">
-            <div class=" container user-info-footer-container display-flex justify-space-between">
-                <a href="https://www.linkedin.com/in/maig" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/mikeislas06" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://codepen.io/maig0818" target="_blank">
-                    <i class="fab fa-codepen"></i>
-                </a>
-            </div>
-        </div>
-    </aside>
+        </nav>
 
-    <aside id="sideMenu" class="side-menu">
-        <div class="side-menu-bar">
-            <span id="sideMenuBtn" class="side-menu-btn">
+        <aside id="userInfoBar" class="user-info">
+            <span id="userInfoBtn" class="user-info-btn">
                 <i class="fas fa-times"></i>
             </span>
-        </div>
-        <div class="container side-menu-submenu-wrapper">
-            <div class="side-menu-submenu-container">
-                <ul>
-                    <li class="menu-option english"><a href="index.html" onclick="closeSideMenu();">Home</a></li>
-                    <li class="menu-option english"><a href="#servicesSection" onclick="closeSideMenu();">Services</a></li>
-                    <li class="menu-option english"><a href="#portfolioSection" onclick="closeSideMenu();">Portfolio</a></li>
-                    <li class="menu-option english"><a href="#contactSection" onclick="closeSideMenu();">Contact</a></li>
-                    <li class="menu-option spanish display-none"><a href="index.html" onclick="closeSideMenu();">Inicio</a></li>
-                    <li class="menu-option spanish display-none"><a href="#servicesSection" onclick="closeSideMenu();">Servicios</a></li>
-                    <li class="menu-option spanish display-none"><a href="#portfolioSection" onclick="closeSideMenu();">Portafolio</a></li>
-                    <li class="menu-option spanish display-none"><a href="#contactSection" onclick="closeSideMenu();">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <div class="side-menu-footer">
-            <div class="container side-menu-footer-lang">
-                <div id="englishBtnWrapper" class="lang lang-english en-fixed">
-                    <h6 id="englishBtn">En</h6>
-                </div>
-                <div id="spanishBtnWrapper" class="lang lang-spanish es-fixed">
-                    <h6 id="spanishBtn">Es</h6>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <header id="header">
-        <div class="container header-container">
-            <div class="header-banner">
-                <div class="header-banner-title">
-                    <h1 class="english">
-                        Web Development is my passion!
-                    </h1>
-                    <h1 class="spanish display-none">
-                        ¡El Desarrollo Web es mi Pasión!
-                    </h1>
-                </div>
-                <div class="header-banner-code">
-                    <div class="typewriter-wrapper">
-                        <p id="codeTypewriterEn" class="english">&lt;<i>code</i>&gt;I build <span class="typed-text"></span><span class="cursor">&nbsp;</span>&lt;<i>code</i>&gt;</p>
-                        <p id="codeTypewriterEs" class="spanish display-none">&lt;<i>code</i>&gt;Desarrollo <span class="typed-text"></span><span class="cursor">&nbsp;</span>&lt;<i>code</i>&gt;</p>
+            <div class="user-info-header">
+                <div class="container user-info-header-banner display-flex">
+                    <div class="user-info-header-banner-user">
+                        <div class="user-info-header-banner-user-img"></div>
+                        <div class="user-info-header-banner-user-name">
+                            <h6 class="english">Miguel A. Islas G.</h6>
+                            <h6 class="spanish display-none">
+                                Miguel A. Islas G.
+                            </h6>
+                        </div>
+                        <div class="user-info-header-banner-user-job">
+                            <h6 class="english">Front-end Developer</h6>
+                            <h6 class="spanish display-none">
+                                Desarrollador Front-End
+                            </h6>
+                        </div>
                     </div>
                 </div>
-                <div class="header-banner-btn">
-                    <a href="#servicesSection" class="english">
-                        EXPLORE NOW
+            </div>
+            <div class="user-info-residence">
+                <div class="container user-info-residence-container">
+                    <ul>
+                        <li class="display-flex justify-space-between">
+                            <h5 class="english">Residence:</h5>
+                            <h6 class="english">Mexico</h6>
+                            <h5 class="spanish display-none">Residencia:</h5>
+                            <h6 class="spanish display-none">México</h6>
+                        </li>
+                        <li class="display-flex justify-space-between">
+                            <h5 class="english">City:</h5>
+                            <h6 class="english">Puebla</h6>
+                            <h5 class="spanish display-none">Ciudad:</h5>
+                            <h6 class="spanish display-none">Puebla</h6>
+                        </li>
+                        <li class="display-flex justify-space-between">
+                            <h5 class="english">Age:</h5>
+                            <h6 class="english">27</h6>
+                            <h5 class="spanish display-none">Edad:</h5>
+                            <h6 class="spanish display-none">27</h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="user-info-lang">
+                <div class="container user-info-lang-container">
+                    <div class="row display-flex h-100 align-center">
+                        <div class="col-6">
+                            <div id="progressCircle1" class="progress first">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">100%</div>
+                            </div>
+                            <div class="language english">Spanish</div>
+                            <div class="language spanish display-none">
+                                Español
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div id="progressCircle2" class="progress second">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">90%</div>
+                            </div>
+                            <div class="language english">English</div>
+                            <div class="language spanish display-none">
+                                Inglés
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="user-info-skills">
+                <div class="container user-info-skills-container">
+                    <div class="skills-wrapper">
+                        <div class="skill">
+                            <div
+                                class="
+                                    skill-title
+                                    display-flex
+                                    justify-space-between
+                                "
+                            >
+                                HTML <span>90 %</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div id="skill1" class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div
+                                class="
+                                    skill-title
+                                    display-flex
+                                    justify-space-between
+                                "
+                            >
+                                CSS <span>80 %</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div id="skill2" class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div
+                                class="
+                                    skill-title
+                                    display-flex
+                                    justify-space-between
+                                "
+                            >
+                                JS <span>80 %</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div id="skill3" class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div
+                                class="
+                                    skill-title
+                                    display-flex
+                                    justify-space-between
+                                "
+                            >
+                                Bootstrap <span>70 %</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div id="skill4" class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="user-info-knowledge">
+                <div class="container user-info-knowledge-container">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Bootstrap</li>
+                        <li class="english">
+                            <i class="fas fa-check"></i> Git knowledge
+                        </li>
+                        <li class="spanish display-none">
+                            <i class="fas fa-check"></i> Conocimiento en Git
+                        </li>
+                        <li><i class="fas fa-check"></i> Microsoft Azure</li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="resume">
+                <div class="container resume-container">
+                    <a
+                        href="./assets/files/ResumeMAIG.pdf"
+                        download
+                        class="english"
+                    >
+                        Download Resume <i class="fas fa-download"></i>
                     </a>
-                    <a href="#servicesSection" class="spanish display-none">
-                        CONOCE MÁS
+                    <a
+                        href="./assets/files/CVMAIG.pdf"
+                        download
+                        class="spanish display-none"
+                    >
+                        Descargar CV <i class="fas fa-download"></i>
                     </a>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <section id="expertiseSection">
-        <div class="container expertise-section">
-            <div class="row">
-                <div class="col-6 col-md-6 col-lg-3">
-                    <span class="english">2 +</span>
-                    <h6 class="english">Years Experience</h6>
-                    <h6 class="spanish display-none">Años de Experiencia</h6>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3">
-                    <span class="english">10 +</span>
-                    <h6 class="english">Completed Projects</h6>
-                    <h6 class="spanish display-none">Proyectos Finalizados</h6>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3">
-                    <span class="english">50 +</span>
-                    <h6 class="english">Happy Customers</h6>
-                    <h6 class="spanish display-none">Clientes Satisfechos</h6>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3">
-                    <span class="english">3 +</span>
-                    <h6 class="english">Cloud Certifications</h6>
-                    <h6 class="spanish display-none">Certificaciones en la Nube</h6>
+            <div class="user-info-footer">
+                <div
+                    class="
+                        container
+                        user-info-footer-container
+                        display-flex
+                        justify-space-between
+                    "
+                >
+                    <a href="https://www.linkedin.com/in/maig" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/mikeislas06" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://codepen.io/maig0818" target="_blank">
+                        <i class="fab fa-codepen"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </aside>
 
-    <hr>
-    
-    <section id="servicesSection">
-        <div class="container services-section">
-            <h5 class="english">My Services</h5>
-            <h5 class="spanish display-none">Servicios</h5>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="service">
-                        <h6 class="english">Web Development</h6>
-                        <h6 class="spanish display-none">Desarrollo Web</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Dolores odit fugit 
-                            quo ipsum libero dolore corrupti beatae 
-                            sapiente non nostrum!
-                        </p>
-                        <a href="#" class="english">ORDER NOW</a>
-                        <a href="#" class="spanish display-none">MÁS INFORMACIÓN</a>
-                    </div>
+        <aside id="sideMenu" class="side-menu">
+            <div class="side-menu-bar">
+                <span id="sideMenuBtn" class="side-menu-btn">
+                    <i class="fas fa-times"></i>
+                </span>
+            </div>
+            <div class="container side-menu-submenu-wrapper">
+                <div class="side-menu-submenu-container">
+                    <ul>
+                        <li class="menu-option english">
+                            <a href="index.html" onclick="closeSideMenu();"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="menu-option english">
+                            <a
+                                href="#servicesSection"
+                                onclick="closeSideMenu();"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="menu-option english">
+                            <a
+                                href="#portfolioSection"
+                                onclick="closeSideMenu();"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li class="menu-option english">
+                            <a href="#contactSection" onclick="closeSideMenu();"
+                                >Contact</a
+                            >
+                        </li>
+                        <li class="menu-option spanish display-none">
+                            <a href="index.html" onclick="closeSideMenu();"
+                                >Inicio</a
+                            >
+                        </li>
+                        <li class="menu-option spanish display-none">
+                            <a
+                                href="#servicesSection"
+                                onclick="closeSideMenu();"
+                                >Servicios</a
+                            >
+                        </li>
+                        <li class="menu-option spanish display-none">
+                            <a
+                                href="#portfolioSection"
+                                onclick="closeSideMenu();"
+                                >Portafolio</a
+                            >
+                        </li>
+                        <li class="menu-option spanish display-none">
+                            <a href="#contactSection" onclick="closeSideMenu();"
+                                >Contacto</a
+                            >
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="service">
-                        <h6 class="english">UI/UX Design</h6>
-                        <h6 class="spanish display-none">Diseño UI/UX</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Dolores odit fugit 
-                            quo ipsum libero dolore corrupti beatae 
-                            sapiente non nostrum!
-                        </p>
-                        <a href="#" class="english">ORDER NOW</a>
-                        <a href="#" class="spanish display-none">MÁS INFORMACIÓN</a>
+            </div>
+            <hr />
+            <div class="side-menu-footer">
+                <div class="container side-menu-footer-lang">
+                    <div
+                        id="englishBtnWrapper"
+                        class="lang lang-english en-fixed"
+                    >
+                        <h6 id="englishBtn">En</h6>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="service">
-                        <h6 class="english">Cloud Computing Projects</h6>
-                        <h6 class="spanish display-none">Proyectos de Cloud Computing</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Dolores odit fugit 
-                            quo ipsum libero dolore corrupti beatae 
-                            sapiente non nostrum!
-                        </p>
-                        <a href="#" class="english">ORDER NOW</a>
-                        <a href="#" class="spanish display-none">MÁS INFORMACIÓN</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="service">
-                        <h6 class="english">Sound Design</h6>
-                        <h6 class="spanish display-none">Diseño Sonoro</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Dolores odit fugit 
-                            quo ipsum libero dolore corrupti beatae 
-                            sapiente non nostrum!
-                        </p>
-                        <a href="#" class="english">ORDER NOW</a>
-                        <a href="#" class="spanish display-none">MÁS INFORMACIÓN</a>
+                    <div
+                        id="spanishBtnWrapper"
+                        class="lang lang-spanish es-fixed"
+                    >
+                        <h6 id="spanishBtn">Es</h6>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </aside>
 
-    <section id="portfolioSection">
-        <div class="portfolio-section">
-            <h5 class="english">Portfolio</h5>
-            <h5 class="spanish display-none">Portafolio</h5>
-            <ul class=" portfolio-menu mx-auto">
-                <li id="pOption1" class="english p-active">
-                    All
-                </li>
-                <li id="pOption1" class="spanish display-none p-active">
-                    Todos
-                </li>
-                <li id="pOption2" class="english">
-                    Web Design
-                </li>
-                <li id="pOption2" class="spanish display-none">
-                    Diseño Web
-                </li>
-            </ul>
-            <div class="container">
+        <header id="header">
+            <div class="container header-container">
+                <div class="header-banner">
+                    <div class="header-banner-title">
+                        <h1 class="english">Web Development is my passion!</h1>
+                        <h1 class="spanish display-none">
+                            ¡El Desarrollo Web es mi Pasión!
+                        </h1>
+                    </div>
+                    <div class="header-banner-code">
+                        <div class="typewriter-wrapper">
+                            <p id="codeTypewriterEn" class="english">
+                                &lt;<i>code</i>&gt;I build
+                                <span class="typed-text"></span
+                                ><span class="cursor">&nbsp;</span
+                                >&lt;<i>code</i>&gt;
+                            </p>
+                            <p
+                                id="codeTypewriterEs"
+                                class="spanish display-none"
+                            >
+                                &lt;<i>code</i>&gt;Desarrollo
+                                <span class="typed-text"></span
+                                ><span class="cursor">&nbsp;</span
+                                >&lt;<i>code</i>&gt;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-banner-btn">
+                        <a href="#servicesSection" class="english">
+                            EXPLORE NOW
+                        </a>
+                        <a href="#servicesSection" class="spanish display-none">
+                            CONOCE MÁS
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="expertiseSection">
+            <div class="container expertise-section">
+                <div class="row">
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <span class="english">2 +</span>
+                        <h6 class="english">Years Experience</h6>
+                        <h6 class="spanish display-none">
+                            Años de Experiencia
+                        </h6>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <span class="english">10 +</span>
+                        <h6 class="english">Completed Projects</h6>
+                        <h6 class="spanish display-none">
+                            Proyectos Finalizados
+                        </h6>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <span class="english">50 +</span>
+                        <h6 class="english">Happy Customers</h6>
+                        <h6 class="spanish display-none">
+                            Clientes Satisfechos
+                        </h6>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <span class="english">3 +</span>
+                        <h6 class="english">Cloud Certifications</h6>
+                        <h6 class="spanish display-none">
+                            Certificaciones en la Nube
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <section id="servicesSection">
+            <div class="container services-section">
+                <h5 class="english">My Services</h5>
+                <h5 class="spanish display-none">Servicios</h5>
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="./assets/imgs/webDesign.jpg" alt="Web Design image">
+                        <div class="service">
+                            <h6 class="english">Web Development</h6>
+                            <h6 class="spanish display-none">Desarrollo Web</h6>
+                            <p class="english">
+                                Passionate web designer, skilled in HTML5, CSS3,
+                                JS, React, among others. 1+ year of experience
+                                in developing user interfaces, testing and
+                                debugging.
+                            </p>
+                            <p class="english">
+                                Proven ability in optimizing web
+                                functionalities.
+                            </p>
+                            <p class="spanish display-none">
+                                Diseño web con habilidades en HTML5, CSS3, JS,
+                                React, entre otras. 1+ años de experiencia
+                                desarrollando interfaces de usuario, pruebas y
+                                depuración de errores.
+                            </p>
+                            <p class="spanish display-none">
+                                Habilidades para optimizar funcionalidades web.
+                            </p>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="./assets/imgs/webDesign.jpg" alt="Web Design image">
+                        <div class="service">
+                            <h6 class="english">Cloud Computing Projects</h6>
+                            <h6 class="spanish display-none">
+                                Proyectos de Cloud Computing
+                            </h6>
+                            <p class="english">
+                                First level Solution creation in infrastructure
+                                in Microsof Azure mainly. Provide appropriate
+                                and customized value propositions. Developing
+                                tools to automate manual procedures and increase
+                                efficiency.
+                            </p>
+                            <p class="english">
+                                Microsoft Azure Fundamentals certified.
+                                Microsoft Azure Administrator certified.
+                            </p>
+                            <p class="spanish display-none">
+                                Creación de soluciones de infraestructura en la
+                                nube Microsoft Azure. Propuestas de valor
+                                personalizadas para cada cliente. Desarrollo de
+                                automatización de procesos manuales para
+                                incrementar la eficiencia del trabajo.
+                            </p>
+                            <p class="spanish display-none">
+                                Certificación Microsoft Azure Fundamentals.
+                                Certificación Microsoft Azure Administrator.
+                            </p>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="./assets/imgs/webDesign.jpg" alt="Web Design image">
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <img src="./assets/imgs/webDesign.jpg" alt="Web Design image">
+                        <div class="service">
+                            <h6 class="english">
+                                Sound Design and post-production audio editing
+                            </h6>
+                            <h6 class="spanish display-none">
+                                Diseño de audio y audio para post producción
+                                audiovisual
+                            </h6>
+                            <p class="english">
+                                Recording, editing, and creating sounds to help
+                                establish a sense of place or time to help
+                                create a mood or atmosphere, or to represent the
+                                inner world or emotional state of a character in
+                                an audio-visual or audio production.
+                            </p>
+                            <p class="spanish display-none">
+                                Grabación, edición y creación de sonidos para
+                                ayudar a establecer un sentido de lugar o tiempo
+                                para ayudar a crear un estado de ánimo o
+                                atmósfera, o para representar el mundo interior
+                                o el estado emocional de un personaje de una
+                                producción audiovisual o auditiva.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contactSection">
-        <div class="contact-section">
-            <h5 class="english">Contact</h5>
-            <h5 class="spanish display-none">Contacto</h5>
-            <div class="container">
-                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xnqlgkwl" method="post">
-                    <fieldset id="fs-frm-inputs">
-                        <label for="full-name" class="english">Full Name</label>
-                        <input type="text" class="english" name="name" id="full-name" placeholder="First and Last" required="">
-                        <label for="full-name" class="spanish display-none">Nombre Completo</label>
-                        <input type="text" class="spanish display-none" name="name" id="full-name" placeholder="Nombre y Apellido" required="">
-                        
-                        <label for="email-address" class="english">Email Address</label>
-                        <input type="email" class="english" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
-                        <label for="email-address" class="spanish display-none">Email</label>
-                        <input type="email" class="spanish display-none" name="_replyto" id="email-address" placeholder="email@dominio.com" required="">
-                        
-                        <label for="message" class="english">Message</label>
-                        <textarea rows="5" class="english" name="message" id="message" placeholder="Type your message here..." required=""></textarea>
-                        <label for="message" class="spanish display-none">Mensaje</label>
-                        <textarea rows="5" class="spanish display-none" name="message" id="message" placeholder="Escribe tu mensaje aquí..." required=""></textarea>
-                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                    </fieldset>
-                    <div class="w-100 text-center">
-                        <input type="submit" class="english submit" value="Submit">
-                        <input type="submit" class="spanish display-none submit" value="Enviar">
+        <section id="portfolioSection">
+            <div class="portfolio-section">
+                <h5 class="english">Portfolio</h5>
+                <h5 class="spanish display-none">Portafolio</h5>
+                <ul class="portfolio-menu mx-auto">
+                    <li id="pOption1" class="english p-active">All</li>
+                    <li id="pOption1" class="spanish display-none p-active">
+                        Todos
+                    </li>
+                    <li id="pOption2" class="english">Web Design</li>
+                    <li id="pOption2" class="spanish display-none">
+                        Diseño Web
+                    </li>
+                </ul>
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-12 col-md-6 col-lg-4 portfolio-container"
+                        >
+                            <img
+                                src="./assets/imgs/VMT_Portfolio.png"
+                                alt="Web Design image"
+                            />
+                            <a
+                                class="show-more-btn"
+                                href="https://vmt-ux.netlify.app"
+                                target="_blank"
+                            >
+                                <span>Go to site</span>
+                            </a>
+                        </div>
+                        <div
+                            class="col-12 col-md-6 col-lg-4 portfolio-container"
+                        >
+                            <img
+                                src="./assets/imgs/webDesign.jpg"
+                                alt="Web Design image"
+                            />
+                            <a
+                                class="show-more-btn"
+                                href="https://vmt-ux.netlify.app"
+                                target="_blank"
+                            >
+                                <span>Go to site</span>
+                            </a>
+                        </div>
+                        <div
+                            class="col-12 col-md-6 col-lg-4 portfolio-container"
+                        >
+                            <img
+                                src="./assets/imgs/webDesign.jpg"
+                                alt="Web Design image"
+                            />
+                            <a
+                                class="show-more-btn"
+                                href="https://vmt-ux.netlify.app"
+                                target="_blank"
+                            >
+                                <span>Go to site</span>
+                            </a>
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Local JS -->
-    <script src="./assets/js/scripts.js"></script>
+        <section id="contactSection">
+            <div class="contact-section">
+                <h5 class="english">Contact</h5>
+                <h5 class="spanish display-none">Contacto</h5>
+                <div class="container">
+                    <form
+                        id="fs-frm"
+                        name="simple-contact-form"
+                        accept-charset="utf-8"
+                        action="https://formspree.io/f/xnqlgkwl"
+                        method="post"
+                    >
+                        <fieldset id="fs-frm-inputs">
+                            <label for="full-name" class="english"
+                                >Full Name</label
+                            >
+                            <input
+                                type="text"
+                                class="english"
+                                name="name"
+                                id="full-name"
+                                placeholder="First and Last"
+                                required=""
+                            />
+                            <label for="full-name" class="spanish display-none"
+                                >Nombre Completo</label
+                            >
+                            <input
+                                type="text"
+                                class="spanish display-none"
+                                name="name"
+                                id="full-name"
+                                placeholder="Nombre y Apellido"
+                                required=""
+                            />
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                            <label for="email-address" class="english"
+                                >Email Address</label
+                            >
+                            <input
+                                type="email"
+                                class="english"
+                                name="_replyto"
+                                id="email-address"
+                                placeholder="email@domain.com"
+                                required=""
+                            />
+                            <label
+                                for="email-address"
+                                class="spanish display-none"
+                                >Email</label
+                            >
+                            <input
+                                type="email"
+                                class="spanish display-none"
+                                name="_replyto"
+                                id="email-address"
+                                placeholder="email@dominio.com"
+                                required=""
+                            />
 
-  </body>
+                            <label for="message" class="english">Message</label>
+                            <textarea
+                                rows="5"
+                                class="english"
+                                name="message"
+                                id="message"
+                                placeholder="Type your message here..."
+                                required=""
+                            ></textarea>
+                            <label for="message" class="spanish display-none"
+                                >Mensaje</label
+                            >
+                            <textarea
+                                rows="5"
+                                class="spanish display-none"
+                                name="message"
+                                id="message"
+                                placeholder="Escribe tu mensaje aquí..."
+                                required=""
+                            ></textarea>
+                            <input
+                                type="hidden"
+                                name="_subject"
+                                id="email-subject"
+                                value="Contact Form Submission"
+                            />
+                        </fieldset>
+                        <div class="w-100 text-center">
+                            <input
+                                type="submit"
+                                class="english submit"
+                                value="Submit"
+                            />
+                            <input
+                                type="submit"
+                                class="spanish display-none submit"
+                                value="Enviar"
+                            />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Local JS -->
+        <script src="./assets/js/scripts.js"></script>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
