@@ -99,6 +99,12 @@
     }
 }
 
+@media (min-width: 992px) {
+    .portfolio-section img {
+        height: 220px;
+    }
+}
+
 @media (min-width: 1024px) {
     .header-container h1 {
         font-size: 80px;
@@ -134,6 +140,12 @@
 @media (min-width: 1024px) and (orientation: landscape) {
     .header-banner-title h1 {
         font-size: 70px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .portfolio-section img {
+        height: 260px;
     }
 }
 
