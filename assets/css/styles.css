@@ -726,7 +726,8 @@ li.p-active {
 }
 
 .portfolio-section img {
-    height: 200px;
+    /* height: 200px; */
+    height: 300px;
     margin-top: 0;
     margin-bottom: 20px;
 }

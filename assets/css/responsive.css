@@ -1,10 +1,10 @@
-@media (min-width:411px) {
+@media (min-width: 411px) {
     .header-container h1 {
         font-size: 53px;
     }
 }
 
-@media (min-width:740px) {
+@media (min-width: 740px) {
     .header-container h1 {
         font-size: 50px;
     }
@@ -21,6 +21,7 @@
 
     .portfolio-section img {
         width: 70%;
+        height: 200px;
     }
 
     .user-info {
@@ -28,7 +29,7 @@
     }
 }
 
-@media (min-width:740px) and (orientation:landscape) {
+@media (min-width: 740px) and (orientation: landscape) {
     .header-banner-title h1 {
         font-size: 28px;
     }
@@ -59,7 +60,7 @@
     .user-info-residence-container h5 {
         font-size: 15px;
     }
-    
+
     .user-info-residence-container h6 {
         font-size: 13px;
     }
@@ -71,7 +72,7 @@
     .expertise-section span {
         font-size: 24px;
     }
-    
+
     .expertise-section h6 {
         font-size: 18px;
     }
@@ -130,13 +131,13 @@
     }
 }
 
-@media (min-width:1024px) and (orientation:landscape) {
+@media (min-width: 1024px) and (orientation: landscape) {
     .header-banner-title h1 {
         font-size: 70px;
     }
 }
 
-@media (min-width:1800px) {
+@media (min-width: 1800px) {
     hr {
         width: 60%;
     }
@@ -182,7 +183,7 @@
 
     .user-info-btn {
         display: none;
-    }    
+    }
 
     #skill1 {
         animation: loading-90 1.8s linear forwards;
@@ -222,7 +223,7 @@
         right: 265px;
         bottom: 60px;
     }
-    
+
     .es-fixed {
         right: 265px;
         bottom: 20px;
