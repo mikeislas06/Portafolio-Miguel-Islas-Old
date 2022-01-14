@@ -744,9 +744,9 @@ li.p-active {
 
 .show-more-btn {
   position: absolute;
-  top: -45px;
+  top: -70px;
   left: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
   z-index: 999;
   transition: all 0.5s;
